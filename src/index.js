@@ -5,8 +5,8 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 /// <reference path="../node_modules/@types/react/index.d.ts" />
 
-var yMax = 50;
-var xMax = 70;
+var yMax = 30;
+var xMax = 50;
 var pixels = yMax*xMax;
 var generations = 0;
 
@@ -75,7 +75,7 @@ class Board extends React.Component{
     generateBoard(how){
         generations = 0;
         var board = {}
-        var squareIsD = 1
+        var squareID = 1
         var statusNew = null;
         for ( var j = 1; j <= yMax; j++ ){
             for ( var i = 1; i <= xMax; i++ ){
